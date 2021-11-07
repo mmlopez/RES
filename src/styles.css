@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(42, 57, 77);
+  color: white;
+  overflow: hidden;
+}
+canvas {
+  background: -webkit-linear-gradient(rgb(24, 24, 24), rgb(42, 57, 77));
+  top: 0;
+  z-index: 1;
+}
+
+/* 
+@keyframes glowing {
+  0% { text-shadow: 0 1px 0px #fff; }
+  40% { text-shadow: 0 1px 2px #fff; }
+  60% { text-shadow: 0 1px 4px #fff; }
+  100% { text-shadow: 0 1px 0px #fff; }
+} */
+
+a:link {
+  color: rgb(135, 206, 250);
+  text-decoration: none;
+  letter-spacing: 0;
+  /*   animation: glowing 10000ms infinite; */
+}
+
+a:hover {
+  transition-duration: 0.7s;
+  opacity: 0.9;
+  text-decoration: overline underline rgba(135, 206, 250, 0.5);
+}
+
+.header {
+  overflow: hidden;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  background: -webkit-linear-gradient(black, white, white, #555, black);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-weight: light;
+  font-family: raleway, roboto, lato, sans-serif;
+  letter-spacing: 4px;
+  display: block;
+  margin: 20px 0 20px 0;
+  word-break: break-all;
+  transition-duration: 3s;
+}
+.header:before,
+.header:after {
+  background-color: rgba(150, 150, 150, 0.5);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.header:before {
+  right: 0.1em;
+  margin-left: -50%;
+}
+.header:after {
+  left: 0.1em;
+  margin-right: -50%;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?3qkin2");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?#iefix3qkin2")
+      format("embedded-opentype"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.woff?3qkin2")
+      format("woff"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.ttf?3qkin2")
+      format("truetype"),
+    url("fhttps://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.svg?3qkin2#icomoon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.social-networks {
+  font-size: 0;
+  padding: 0;
+}
+.social-networks li {
+  display: inline-block;
+  margin: 0 15px 30px 15px;
+}
+.social-networks a {
+  display: block;
+  position: relative;
+  margin: 0 7px;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  pointer-events: auto;
+}
+.social-networks a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
+  background-color: rgba(30, 30, 30, 0.3);
+  transition: all 400ms;
+  border-radius: 100%;
+}
+.social-networks a:after {
+  position: relative;
+  display: block;
+  font-family: "icomoon";
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 40px;
+  line-height: 80px;
+}
+.social-networks a:hover,
+.social-networks a:focus,
+.social-networks a:active {
+  text-decoration: none;
+  border-radius: 100%;
+  background-color: none;
+  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.808);
+  opacity: 1;
+  animation: bounce 1s;
+}
+.social-networks .icon-linkedin:after {
+  content: "\eac9";
+}
+.social-networks .icon-linkedin:hover:before,
+.social-networks .icon-linkedin:focus:before {
+  background: -webkit-linear-gradient(#0077b5, #0077b580);
+}
+
+.social-networks .icon-spotify:after {
+  content: "\eac94";
+}
+.social-networks .icon-spotify:hover:before,
+.social-networks .icon-spotify:focus:before {
+  background: -webkit-linear-gradient(#0077b5, #0077b580);
+}
+
+.icon-google-drive:after {
+  content: "\eac8f";
+}
+
+.icon-enlarge:after {
+  content: "\eac989";
+}
+
+.icon-arrow:after {
+  content: "\ea329";
+}
+
+.contact .icon-phone:after {
+  content: "\eac942";
+}
+
+.contact .icon-envelope:after {
+  content: "\eac945";
+}
+
+.social-networks .icon-location:after {
+  content: "\eac947";
+}
+.social-networks .icon-location:hover:before,
+.social-networks .icon-location:focus:before {
+  background: -webkit-linear-gradient(#0077b5, #0077b580);
+}
+
+.contact .icon-calendar:after {
+  content: "\eac953";
+}
+
+.social-networks .icon-facebook:after {
+  content: "\e603";
+}
+.social-networks .icon-facebook:hover:before,
+.social-networks .icon-facebook:focus:before {
+  background: -webkit-linear-gradient(#3b5998, #3b599880);
+}
+.social-networks .icon-github:after {
+  content: "\eab1";
+}
+.social-networks .icon-github:hover:before,
+.social-networks .icon-github:focus:before {
+  background: -webkit-linear-gradient(#6e5494, #6e549480);
+}
+.social-networks .icon-instagram:after {
+  content: "\e604";
+}
+.social-networks .icon-instagram:hover:before,
+.social-networks .icon-instagram:focus:before {
+  background: -webkit-linear-gradient(#e1306c, #e1306b80);
+}
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -6px, 0);
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -4px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    font-size: 4em;
+  }
+  .subheader {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    font-size: 3em;
+  }
+  .subheader {
+    font-size: 1.5em;
+  }
+  .social-networks a {
+    width: 140px;
+    height: 140px;
+  }
+  .social-networks a:after {
+    font-size: 70px;
+    line-height: 140px;
+  }
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 500px) {
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
