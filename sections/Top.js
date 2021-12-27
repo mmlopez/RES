@@ -5,7 +5,7 @@ import Subheader from "../components/Subheader.js";
 function Top() {
   return (
     <React.Fragment>
-      <Header text="Janet Vu" />
+      <Header text="Michael Lopez" />
       <Subheader text="programmer | designer | student" />
     </React.Fragment>
   );

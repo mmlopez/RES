@@ -31,10 +31,10 @@ function SocialLinks() {
           marginBottom: 25
         }}
       >
-        <SocialLink name="github" user="jajanet" />
-        <SocialLink name="linkedin" user="in/janet-vu" />
-        <SocialLink name="instagram" user="veryjanet" />
-        <SocialLink name="facebook" user="jnetvu" />
+        <SocialLink name="github" user="mmlopez" />
+        <SocialLink name="linkedin" user="in/mike-lopez-3541b9137" />
+        <SocialLink name="instagram" user="lopzinsky/" />
+        <SocialLink name="facebook" user="mike.lopez.710/" />
       </Grid>
     </ul>
   );
