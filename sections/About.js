@@ -33,16 +33,16 @@ function About({ width }) {
             a glimpse at my life and work—feel free to connect with me as well!
             <br />
             <br />
-            <ContactLink action="tel" value="6167275559" label="Cell Phone" />
+            <ContactLink action="tel" value="6236983036" label="Cell Phone" />
             <ContactLink
               action="mailto"
-              value="vujaneth@gmail.com"
+              value="lopez975@gmail.com"
               label="Personal Email"
             />
             <ContactLink
               action="mailto"
-              value="vjanet@umich.edu"
-              label="School Email"
+              value="info@usedforkliftpartsaz.com"
+              label="Business"
             />
             <br />
             <a

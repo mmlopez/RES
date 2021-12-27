@@ -7,14 +7,15 @@ function Photos({ height }) {
       <Gallery
         images={[
           {
-            src: "https://i.ibb.co/983NWGz/IMG-4373.jpg",
-            caption: "Me!"
+            src: "/myimages/mike.jpg",
+            caption: "Me"
           },
           {
-            src: "https://i.ibb.co/b2Mvj8L/IMG-3270-1.jpg",
+            src: "/myimages/mike.jpg",
             caption: "Miniature me :)"
           },
           {
+            /*           {
             src: "https://i.ibb.co/bP1HL6X/IMG-3296.jpg",
             caption:
               "My cousins and I about to watch the Incredibles 2 at the movie theatre"
@@ -30,6 +31,8 @@ function Photos({ height }) {
           {
             src: "https://i.ibb.co/xjpdmVC/IMG-3495.jpg",
             caption: "4th of July fun with friends"
+          }
+        */
           }
         ]}
         height={height}
