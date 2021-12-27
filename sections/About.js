@@ -29,8 +29,8 @@ function About({ width }) {
       <Textbox>
         <Grid container spacing={2}>
           <Grid item sm={7} style={{ fontSize: "1.15em" }}>
-            Hi, internet user! Thanks for stopping by :) I hope you enjoy taking
-            a glimpse at my life and work—feel free to connect with me as well!
+            Welcome to my little space online. I have my contact info, websites,
+            and resume here.
             <br />
             <br />
             <ContactLink action="tel" value="6236983036" label="Cell Phone" />
@@ -56,7 +56,7 @@ function About({ width }) {
               <button children="Call" />
             </a>
             <a
-              href="mailto:vujaneth@gmail.com"
+              href="mailto:lopez975@gmail.comm"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -91,37 +91,7 @@ function About({ width }) {
                   textAlign: "left",
                   whiteSpace: "pre-wrap"
                 }}
-              >
-                {"const Janet = "}
-                {JSON.stringify(attr, null, 2)}
-              </pre>
-            </div>
-          </Grid>
-          <Grid item sm>
-            <div
-              style={{
-                margin: "auto"
-              }}
-            >
-              <pre
-                style={{
-                  fontFamily: "inherit",
-                  textAlign: "left",
-                  whiteSpace: "pre-wrap"
-                }}
-              >
-                {"Janet.funFacts = "}
-                {JSON.stringify(
-                  [
-                    `Former Michigan Football Stadium security guard`,
-                    `Donated hair 3 times to Pantene's Lovely Lengths`,
-                    `Wears a fanny pack almost everyday`,
-                    `Started coding in fourth grade on Neopets`
-                  ],
-                  null,
-                  2
-                )}
-              </pre>
+              ></pre>
             </div>
           </Grid>
         </Grid>
